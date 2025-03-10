@@ -122,7 +122,7 @@ function showGlobalNodes() {
             if (index === nodeLines.length - 1) {
                 setTimeout(() => transitionToBigBang(nodes), 1000);
             }
-        }, 500 * (index + nodes.length));
+        }, 250 * (index + nodes.length));
     });
 }
 
