@@ -71,10 +71,7 @@ function drop(e) {
             }
         });
 
-        if (!snapped) {
-            draggedPiece.style.left = `${draggedPiece.dataset.originalX}px`;
-            draggedPiece.style.top = `${draggedPiece.dataset.originalY}px`;
-        }
+
 
         draggedPiece.style.zIndex = 0;
         draggedPiece = null;
