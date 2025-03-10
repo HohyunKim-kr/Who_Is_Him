@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>김호현 - 이력서</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Times New Roman', serif;
+            background: linear-gradient(135deg, #f5e6cc 0%, #e6b8a2 100%);
+            color: #333;
+            line-height: 1.6;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            overflow: hidden;
+        }
+
+        .container {
+            display: flex;
+            max-width: 1200px;
+            width: 100%;
+            background: linear-gradient(135deg, #f9ece6 0%, #f2d8d3 100%);
+            border: 5px solid #000;
+            border-radius: 20px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+            overflow: hidden;
+            margin: 20px;
+            position: relative;
+        }
+
+        .container::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 2px solid #c9a66b;
+            border-radius: 15px;
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        .left-section {
+            width: 30%;
+            background-color: #e6b8a2;
+            color: #fff;
+            padding: 30px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .profile-img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            margin: 0 auto 20px;
+            display: block;
+            border: 3px solid #c9a66b;
+            box-shadow: 0 0 5px rgba(201, 166, 107, 0.5);
+        }
+
+        .left-section h1 {
+            font-size: 28px;
+            margin: 20px 0 10px;
+            text-align: center;
+            border-bottom: 2px solid #c9a66b;
+            padding-bottom: 10px;
+            text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+        }
+
+        .left-section h3 {
+            font-size: 16px;
+            margin: 20px 0 10px;
+            text-transform: uppercase;
+            border-bottom: 1px solid #c9a66b;
+            padding-bottom: 5px;
+            text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+        }
+
+        .left-section p {
+            font-size: 14px;
+            margin: 5px 0;
+            text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-info p {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .contact-info i {
+            font-size: 16px;
+        }
+
+        .right-section {
+            width: 70%;
+            padding: 30px;
+            position: relative;
+            z-index: 1;
+            background-color: #fff;
+        }
+
+        .right-section h2 {
+            font-size: 22px;
+            color: #e6b8a2;
+            margin-bottom: 10px;
+            border-bottom: 2px solid #c9a66b;
+            padding-bottom: 5px;
+            text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+        }
+
+        .right-section p {
+            font-size: 14px;
+            margin: 10px 0;
+            color: #444;
+        }
+
+        .experience-item {
+            margin-bottom: 20px;
+        }
+
+        .experience-item h3 {
+            font-size: 16px;
+            color: #333;
+            margin-bottom: 5px;
+            text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+        }
+
+        .experience-item .date {
+            font-size: 14px;
+            color: #777;
+            margin-bottom: 5px;
+        }
+
+        .experience-item ul {
+            padding-left: 20px;
+        }
+
+        .experience-item li {
+            font-size: 14px;
+            margin-bottom: 5px;
+            color: #444;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- 좌측: 개인 정보 -->
+        <div class="left-section">
+            <img src="src/pengu.png" alt="프로필 사진" class="profile-img">
+            <h1>김호현</h1>
+            <p style="text-align: center;">블록체인 개발자 & 코인 트레이더</p>
+
+            <h3>연락처</h3>
+            <div class="contact-info">
+                <p>📧 example@email.com</p>
+                <p>📍 서울, 대한민국</p>
+                <p>📞 010-1234-5678</p>
+            </div>
+
+            <h3>스킬</h3>
+            <p>C, C++, JavaScript, Node.js</p>
+            <p>Solidity, React.js, Web3.js</p>
+            <p>HardHat, Win32API, Direct2D</p>
+            <p>Direct3D, Unity, Git, Notion</p>
+            <p>Arbitrum</p>
+
+            <h3>교육</h3>
+            <p>게임인재원 (자퇴)</p>
+
+            <h3>취미</h3>
+            <p>여행, 코인 리서칭, 사용해보기, 물기</p>
+        </div>
+
+        <!-- 우측: 경력 및 세부 사항 -->
+        <div class="right-section">
+            <h2>프로필</h2>
+            <p>철학가, 코인쟁이, 무직 백수, 여행가, 타락한 연금술사로 불리는 다재다능한 인물. 코인 트레이딩과 블록체인 기술에 깊은 관심을 가지고 있으며, 다양한 프로젝트를 통해 실무 경험을 쌓아왔습니다.</p>
+
+            <h2>경력 및 활동</h2>
+            <div class="experience-item">
+                <h3>코인 트레이더</h3>
+                <p class="date">2021 - 현재</p>
+                <ul>
+                    <li>암호화폐 시장에서 4년간 활동하며 리서치와 트레이딩 경험을 쌓음.</li>
+                    <li>다양한 코인 프로젝트 분석 및 투자 전략 수립.</li>
+                </ul>
+            </div>
+            <div class="experience-item">
+                <h3>블록체인 밸리 개발팀</h3>
+                <p class="date">기간 미상</p>
+                <ul>
+                    <li>블록체인 프로젝트에 참여하여 스마트 컨트랙트 개발 및 Web3 기술 활용 경험.</li>
+                    <li>Solidity와 Web3.js를 활용한 DApp 개발.</li>
+                </ul>
+            </div>
+            <div class="experience-item">
+                <h3>게임인재원 자퇴생</h3>
+                <p class="date">기간 미상</p>
+                <ul>
+                    <li>게임 개발에 대한 기초 지식을 학습.</li>
+                    <li>Unity와 DirectX 관련 기술 익힘.</li>
+                </ul>
+            </div>
+
+            <h2>네이밍</h2>
+            <p>철학가, 코인쟁이, 무직 백수, 여행가, 타락한 연금술사</p>
+        </div>
+    </div>
+</body>
+</html>

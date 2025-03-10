@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fill the Beaker</title>
+    <link rel="stylesheet" href="../css/stack.css" />
+</head>
+<body>
+    <div class="container">
+        <!-- 비커 -->
+        <div class="beaker">
+            <div class="water" id="water"></div>
+        </div>
+
+        <!-- 스택 카드 -->
+        <div class="stack-card" style="top: 50px; left: 350px" data-stack="c">C</div>
+        <div class="stack-card" style="top: 120px; left: 450px" data-stack="cpp">C++</div>
+        <div class="stack-card" style="top: 190px; left: 350px" data-stack="javascript">JavaScript</div>
+        <div class="stack-card" style="top: 260px; left: 450px" data-stack="nodejs">Node.js</div>
+        <div class="stack-card" style="top: 330px; left: 350px" data-stack="solidity">Solidity</div>
+
+        <!-- 다음으로 가기 버튼 -->
+        <button class="next-button" onclick="window.location.href='blockChain.html'">
+            다음으로 가기
+        </button>
+    </div>
+    <script src="../js/stack.js"></script>
+</body>
+</html>

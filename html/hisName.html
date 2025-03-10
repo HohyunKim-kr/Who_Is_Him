@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Name Puzzle</title>
+    <link rel="stylesheet" href="../css/puzzle.css" />
+  </head>
+  <body>
+    <h1>호현의 블로그</h1>
+    <div class="container">
+      <!-- Drop Zones -->
+      <div class="drop-zone" style="left: 0px" data-letter="H"></div>
+      <div class="drop-zone" style="left: 100px" data-letter="O"></div>
+      <div class="drop-zone" style="left: 200px" data-letter="H"></div>
+      <div class="drop-zone" style="left: 300px" data-letter="Y"></div>
+      <div class="drop-zone" style="left: 400px" data-letter="U"></div>
+      <div class="drop-zone" style="left: 500px" data-letter="N"></div>
+
+      <!-- Puzzle Pieces -->
+      <div class="puzzle-piece" style="top: 20px; left: 50px" data-letter="H">
+        H
+      </div>
+      <div class="puzzle-piece" style="top: 20px; left: 250px" data-letter="O">
+        O
+      </div>
+      <div class="puzzle-piece" style="top: 120px; left: 150px" data-letter="H">
+        H
+      </div>
+      <div class="puzzle-piece" style="top: 120px; left: 350px" data-letter="Y">
+        Y
+      </div>
+      <div class="puzzle-piece" style="top: 20px; left: 450px" data-letter="U">
+        U
+      </div>
+      <div class="puzzle-piece" style="top: 120px; left: 50px" data-letter="N">
+        N
+      </div>
+
+      <!-- Success Message -->
+      <div class="success">완성! HOHYUN</div>
+
+      <!-- Next Button -->
+      <button class="next-button" onclick="window.location.href='age.html'">
+        다음으로 가기
+      </button>
+
+      <!-- Confetti Container -->
+      <div class="celebration" id="celebration"></div>
+    </div>
+    <script src="../js/puzzle.js"></script>
+  </body>
+</html>

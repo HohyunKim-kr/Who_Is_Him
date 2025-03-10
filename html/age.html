@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Age Quiz</title>
+    <link rel="stylesheet" href="../css/quiz.css" />
+</head>
+<body>
+    <div class="container">
+        <h1>호현의 나이를 맞춰보세요!</h1>
+        <p>힌트: 이 사람은 IMF 때 태어났습니다.</p>
+        <div class="button-container">
+            <button onclick="checkAnswer(28)">28</button>
+            <button onclick="checkAnswer(29)">29</button>
+            <button onclick="checkAnswer(30)">30</button>
+        </div>
+        <div class="message" id="message">틀렸습니다! 다시 시도해보세요.</div>
+        <button class="next-button" id="nextButton" onclick="window.location.href='stack.html'">
+            다음으로 가기
+        </button>
+    </div>
+    <script src="../js/quiz.js"></script>
+</body>
+</html>

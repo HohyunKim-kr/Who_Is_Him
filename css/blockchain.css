@@ -1,0 +1,146 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    background: linear-gradient(135deg, #0a0a0a, #1a1a1a);
+    color: #fff;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    position: relative;
+    width: 900px;
+    height: 400px;
+    transition: opacity 1s ease;
+}
+
+.blockchain-block {
+    position: absolute;
+    width: 150px;
+    height: 100px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 2px solid #00ffcc;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: #00ffcc;
+    box-shadow: 0 0 15px rgba(0, 255, 204, 0.3);
+    transition: all 0.5s ease;
+    opacity: 0;
+}
+
+.blockchain-block.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.blockchain-block.connected {
+    border-left: 5px solid #00ffcc;
+}
+
+.neon-glow {
+    animation: neonPulse 2s infinite alternate;
+}
+
+@keyframes neonPulse {
+    from { box-shadow: 0 0 10px #00ffcc, 0 0 20px #00ffcc; }
+    to { box-shadow: 0 0 20px #00ffcc, 0 0 30px #00ffcc; }
+}
+
+.connection-line {
+    position: absolute;
+    height: 5px;
+    background: #00ffcc;
+    opacity: 0.5;
+    transition: all 0.3s ease;
+}
+
+.earth {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background: radial-gradient(circle, #1e90ff 20%, #000080 70%);
+    border-radius: 50%;
+    top: 50px;
+    left: 300px;
+    opacity: 0;
+    transition: opacity 1s ease;
+    box-shadow: 0 0 20px rgba(30, 144, 255, 0.5);
+}
+
+.earth.active {
+    opacity: 1;
+}
+
+.node {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: #00ffcc;
+    border-radius: 50%;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.node.active {
+    opacity: 1;
+}
+
+.node-line {
+    position: absolute;
+    background: #00ffcc;
+    height: 2px;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 600px;
+        height: 300px;
+    }
+    .blockchain-block {
+        width: 120px;
+        height: 80px;
+        font-size: 16px;
+    }
+    .earth {
+        width: 200px;
+        height: 200px;
+        top: 50px;
+        left: 200px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        width: 300px;
+        height: 200px;
+    }
+    .blockchain-block {
+        width: 90px;
+        height: 60px;
+        font-size: 14px;
+    }
+    .earth {
+        width: 150px;
+        height: 150px;
+        top: 25px;
+        left: 75px;
+    }
+}
