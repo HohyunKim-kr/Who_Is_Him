@@ -7,7 +7,7 @@
 
 - 🔗 **Homepage**: [Who Is Him](https://who-is-him.vercel.app/)
 - 💻 **GitHub**: [Who_Is_Him Repository](https://github.com/HohyunKim-kr/Who_Is_Him)
-- 📄 **발표 자료**: (링크 추가)
+- 📄 **발표 자료**: (https://rainbow-appeal-099.notion.site/WhoIsHim-WIH-1af28f551d9780828fc1d2c2a0cc2a7a?pvs=4)
 
 ---
 
